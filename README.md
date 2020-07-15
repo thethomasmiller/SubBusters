@@ -9,7 +9,7 @@
 A subscription tracking website
 
 ## Whimsical Diagram
-[]()
+[Whimsical](https://whimsical.com/RZmXX9ckcroVAwkvAWPSaj@VsSo8s35Uw4GTQzNygQqoh)
 
 ## Team Expectations 
 [Team Expectations](https://docs.google.com/document/d/1YprgnRWCR1NIn8XgS9dgycLHxjdiYutliuyY2f4uc7E/edit?usp=sharing)
