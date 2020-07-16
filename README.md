@@ -19,7 +19,8 @@ SubBusters is a subscription tracking website that allows users to create a visu
 [Trello](https://trello.com/b/R5XTRx2G)
 
 #### PostMVP  
-TBD
+- User Feature
+- Continue Building out Features until fully realized. 
 
 ## Schema
 
