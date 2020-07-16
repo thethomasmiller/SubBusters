@@ -19,7 +19,7 @@ const getSubscription = async (req, res) => {
     if (subscription) {
       return res.json(subscription)
     }
-    res.status(404).json({ message: 'Product not found!' })
+    res.status(404).json({ message: 'Subscription not found!' })
   } catch (error) {
     res.status(500).json({ error: error.message })
   }
@@ -45,7 +45,7 @@ const updateSubscription = async (req, res) => {
     if (!subscription) {
       return res.status(404).json({ message: 'Subscription not found!' })
     }
-    res.status(200).json(product)
+    res.status(200).json(subscription)
   })
 }
 
@@ -54,7 +54,7 @@ const deleteSubscription = async (req, res) => {
     const { id } = req.params
     const deleted = await Subscription.findByIdAndUpdate(id)
     if (deleted) {
-      return res.status(200).send('Product deleted')
+      return res.status(200).send('Subscription deleted')
     }
     throw new Error('Subscription not found')
   } catch (error) {
