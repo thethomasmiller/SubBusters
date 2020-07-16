@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-SubBusters is a subscription tracking website that allows users to create a visual log of current subscriptions. Users can create, view, update, and delete subscriptions, which are categorized for viewing by type and date due. Users are also able to visit external websites where they can cancel their subscriptions if they choose. 
+SubBusters is a subscription tracking website that allows users to create a visual log of current subscriptions. Users can create, view, update, and delete subscriptions, which are categorized for viewing by type and date due. Users are also able to visit external websites where they can cancel their subscriptions, if they choose. 
 
 ## Whimsical Diagram
 [Whimsical](https://whimsical.com/RZmXX9ckcroVAwkvAWPSaj@VsSo8s35Uw4GTQzNygQqoh)
