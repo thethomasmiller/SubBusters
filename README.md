@@ -20,3 +20,38 @@ SubBusters is a subscription tracking website that allows users to create a visu
 
 #### PostMVP  
 TBD
+
+## Schema
+
+const Subscription = new Schema(
+   {
+    service: { type: String, required: true },
+    category: { type: String, required: true },
+    subscriptionType: { type: String, required: true },
+    billingCycle: { type: String, required: true },
+    autoRenew: { type: Boolean, required: true },
+    amount: { type: String, required: true },
+    dueDate: { type: String, required: true },
+    logoURL: { type: String, required: true},
+    URL: { type: String, required: true }
+   },
+    { timestamps: true }
+)
+​
+const Example = 
+{
+    "service": "Netflix",
+    "category": "Movies & TV",
+    "subscription-type": "Subscription",
+    "billing-cycle": "Monthly",
+    "auto-renew": true,
+    "amount": "14.99",
+    "due-date": "25",
+    "URL": "https://www.netflix.com/"
+}
+​
+const subs = ["Netflix", "Hulu", "Apple TV", 
+"HBO", "Amazon Prime", "Spotify", "iTunes", "Pandora", "Adobe", "Formstack"]
+Collapse
+
+
