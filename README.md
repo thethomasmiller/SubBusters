@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-A subscription tracking website
+SubBusters is a subscription tracking website that allows users to create a visual log of current subscriptions. Users can create, view, update, and delete subscriptions, which are categorized for viewing by type and date due. Users are also able to visit external websites where they can cancel their subscriptions if they choose. 
 
 ## Whimsical Diagram
 [Whimsical](https://whimsical.com/RZmXX9ckcroVAwkvAWPSaj@VsSo8s35Uw4GTQzNygQqoh)
@@ -16,39 +16,7 @@ A subscription tracking website
 
 ### MVP/PostMVP
 #### MVP 
-
+[Trello](https://trello.com/b/R5XTRx2G)
 
 #### PostMVP  
-
-
-## Project Schedule
-
-|  Day | Deliverable | Status
-|---|---| ---|
-|July 15| ReadMe(No project URL)| INCOMPLETE
-|July 16| | INCOMPLETE
-|July | |  INCOMPLETE
-|July |  | INCOMPLETE
-|July  | Post MVP:  | INCOMPLETE
-|July 24 | Present | INCOMPLETE
-
-
-## Timeframes
-
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| | H | X hrs | X hrs | X hrs|
-| | H | X hrs | X hrs | X hrs |
-|  | H | X hrs |  X hrs |  X hrs |
-| | H | X hrs|  X hrs  | X hrs |
-|  | H | X hrs | X hrs | X hrs |
-| | H | X hrs |  X hrs | X hrs |
-|  | H | X hrs |  X hrs | X hrs |
-| | H | X hrs |  X hrs |  X hrs |
-| | H | X hrs |  X hrs |  X hrs |
-| Total | H | X hrs| X hrs | X hrs |
-
-## Code Snippet
-
-
-## Change Log
+TBD
