@@ -1,5 +1,5 @@
 const db = require('../db/connection')
-const Subscription = require('../models/product')
+const Subscription = require('../models/subscription')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -81,7 +81,7 @@ const main = async () => {
     ]
   
   await Subscription.insertMany(subscriptions)
-  console.log("Created products!")
+  console.log("Created subscriptions!")
 }
 const run =async() => {
   await main()
