@@ -3,6 +3,7 @@
 # SubBusters
 
 [SUBBUSTERS](deployed url)
+[SUBBUSTERS API](https://subbusters.herokuapp.com/api/subscriptions/)
 
 ## Project Overview
 
