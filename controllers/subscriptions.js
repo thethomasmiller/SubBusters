@@ -52,7 +52,7 @@ const updateSubscription = async (req, res) => {
 const deleteSubscription = async (req, res) => {
   try {
     const { id } = req.params
-    const deleted = await Subscription.findByIdAndUpdate(id)
+    const deleted = await Subscription.findByIdAndDelete(id)
     if (deleted) {
       return res.status(200).send('Subscription deleted')
     }
