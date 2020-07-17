@@ -10,6 +10,8 @@ const Subscription = new Schema(
     autoRenew: { type: Boolean, required: true },
     amount: { type: String, required: true },
     lastUsed: { type: String, required: true },
-  }
+  },
+  { timestamps: true }
 )
+
 module.exports = mongoose.model('subscriptions', Subscription)
