@@ -15,7 +15,7 @@ const getSubscriptions = async (req, res) => {
 const getSubscription = async (req, res) => {
   try {
     const { id } = req.params
-    const subscription = await Subscription.findbyId(id)
+    const subscription = await Subscription.findById(id)
     if (subscription) {
       return res.json(subscription)
     }
