@@ -1,0 +1,14 @@
+.footer {
+  
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #FBD090;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: space-around;
+}
