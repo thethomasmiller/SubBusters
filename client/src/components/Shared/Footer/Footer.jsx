@@ -2,12 +2,14 @@ import React from 'react'
 import './Footer.css'
 
 const Footer = () =>
-  <footer className="footer">
-    <div className='footer-links'>
-    <a>About Us</a>
-    <a>FAQ</a>
-    <a>Privacy Policy</a>
+  <footer>
+    <div className="footer">
+      <div className='footer-links'>
+        <a>About Us</a>
+        <a>FAQ</a>
+        <a>Privacy Policy</a>
+      </div>
     </div>
-    </footer>
+  </footer>
 
 export default Footer

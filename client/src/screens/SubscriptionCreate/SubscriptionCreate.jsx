@@ -10,13 +10,14 @@ class SubscriptionCreate extends Component {
     super()
     this.state = {
       subscription: {
-        charge: '',
+        name: '',
         category: '',
-        subscription: '',
         billingCycyle: '',
         autoRenew: '',
         amount: '',
-        lastUsed: '',
+        billingDate: '',
+        logoURL: '',
+        websiteURL: '',
       },
       created: false
     }
@@ -48,12 +49,14 @@ class SubscriptionCreate extends Component {
     }
     return (
       <Layout>
+        <div className='body'>
+        <h2>Add Subscription Manually</h2>
         <form className='create-form' onSubmit={this.handleSubmit}>
           <input
-            className='input-charge'
-            placeholder='Charge'
-            value={subscription.charge}
-            name='charge'
+            className='input-name'
+            placeholder='Name'
+            value={subscription.name}
+            name='name'
             required
             autoFocus
             onChange={this.handleChange}
@@ -64,16 +67,6 @@ class SubscriptionCreate extends Component {
             placeholder='Category'
             value={subscription.category}
             name='charge'
-            required
-            autoFocus
-            onChange={this.handleChange}
-          />
-
-          <select value
-            className='input-subscription'
-            placeholder='Subscription'
-            value={subscription.subscription}
-            name='subscription'
             required
             autoFocus
             onChange={this.handleChange}
@@ -110,17 +103,38 @@ class SubscriptionCreate extends Component {
           />
 
           <input
-            className='input-last-used'
-            placeholder='Last Used'
-            value={subscription.lastUsed}
-            name='lastUsed'
+            className='input-billing-date'
+            placeholder='Billing Date'
+            value={subscription.billingDate}
+            name='billingDate'
             required
             autoFocus
             onChange={this.handleChange}
           />
-          <button type='submit' className="submit-button">Submit</button>
 
+          <input
+            className='input-logo-URL'
+            placeholder='Logo URL'
+            value={subscription.logoURL}
+            name='logoURL'
+            required
+            autoFocus
+            onChange={this.handleChange}
+          />
+
+          <input
+            className='website-url'
+            placeholder='Subscription Website URL'
+            value={subscription.websiteURL}
+            name='websiteURL'
+            required
+            autoFocus
+            onChange={this.handleChange}
+          />
         </form>
+
+        <button type='submit' className="submit-button">Add</button>
+        </div>
       </Layout>
     )
 
