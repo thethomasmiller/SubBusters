@@ -3,7 +3,7 @@ import './App.css'
 import Login from './screens/Login/Login'
 import SubscriptionCreate from './screens/SubscriptionCreate/SubscriptionCreate'
 import SubscriptionDelete from './screens/SubscriptionDelete/SubscriptionDelete'
-import SubscriptionUpdate from './screens/SubscriptionsUpdate/SubscriptionsUpdate'
+import SubscriptionUpdate from './screens/SubscriptionUpdate/SubscriptionUpdate'
 import Subscriptions from './screens/Subscriptions/Subscriptions'
 import { Route, Switch } from 'react-router-dom'
 
