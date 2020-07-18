@@ -1,0 +1,9 @@
+.footer {
+  flex-shrink: 0;
+  padding: 20px;
+}
+
+footer{
+  background-color: #FBD090;
+}
+
