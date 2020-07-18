@@ -62,7 +62,6 @@ const deleteSubscription = async (req, res) => {
   }
 }
 
-
 module.exports = {
   createSubscription,
   getSubscriptions,

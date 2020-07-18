@@ -7,76 +7,84 @@ const main = async () => {
   const subscriptions =
     [
       {
-        "charge": "Netflix",
+        "name": "Netflix",
         "category":"Movies and TV",
-        "subscription": true,
         "billingCycle": "Monthly",
         "autoRenew": true,
         "amount": "14.99",
-        "lastUsed": "Jun 16",
+        "billingDate": "Jun 16",
+        "logoURL": "",
+        "websiteURL":""
       },
       {
-        "charge": "Hulu",
+        "name": "Hulu",
         "category":"Movies and TV",
-        "subscription": true,
         "billingCycle": "Monthly",
         "autoRenew": true,
         "amount": "8.99",
-        "lastUsed": "Nov 23",
+        "billingDate": "Nov 23",
+        "logoURL": "",
+        "websiteURL":"http://netflix.com"
       },
       {
-        "charge": "Prime",
+        "name": "Prime",
         "category":"Movies and TV",
-        "subscription": true,
         "billingCycle": "Monthly",
         "autoRenew": true,
         "amount": "99.99",
-        "lastUsed": "May 20",
+        "billingDate": "May 20",
+        "logoURL": "",
+        "websiteURL":"https://www.primevideo.com"
       },
       {
-        "charge": "Formstack",
+        "name": "Formstack",
         "category":"Software",
-        "subscription": true,
         "billingCycle": "Monthly",
         "autoRenew": true,
         "amount": "39.99",
-        "lastUsed": "Jan 5",
+        "billingDate": "Jan 5",
+        "logoURL": "",
+        "websiteURL":"https://www.formstack.com/index"
       },
       {
-        "charge": "Adobe",
+        "name": "Adobe",
         "category":"Software",
-        "subscription": true,
         "billingCycle": "Yearly",
         "autoRenew": true,
         "amount": "599.99",
-        "lastUsed": "Feb 25",
+        "billingDate": "Feb 25",
+        "logoURL": "",
+        "websiteURL":"https://www.adobe.com"
       },
       {
-        "charge": "Spotify",
+        "namee": "Spotify",
         "category":"Music",
-        "subscription": true,
         "billingCycle": "Monthly",
         "autoRenew": true,
         "amount": "9.99",
-        "lastUsed": "Jun 22",
+        "billingDate": "Jun 22",
+        "logoURL": "",
+        "websiteURL":"https://www.spotify.com/us/"
       },
       {
-        "charge": "Pandora",
+        "name": "Pandora",
         "category":"Music",
-        "subscription": true,
         "billingCycle": "Monthly",
         "autoRenew": true,
         "amount": "4.99",
-        "lastUsed": "May 17",
+        "billingDate": "May 17",
+        "logoURL": "",
+        "websiteURL":"https://www.pandora.com/station/play/4537590550201112475"
       },
       {
-        "charge": "iTunes",
+        "name": "iTunes",
         "category":"Music",
-        "subscription": true,
         "billingCycle": "Monthly",
         "autoRenew": true,
         "amount": "5.99",
-        "lastUsed": "Apr 5",
+        "billingDate": "Apr 5",
+        "logoURL": "",
+        "websiteURL":"https://www.apple.com/itunes/"
       },
     ]
   
