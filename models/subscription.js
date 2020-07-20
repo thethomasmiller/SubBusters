@@ -3,14 +3,14 @@ const Schema = mongoose.Schema
 
 const Subscription = new Schema(
   {
-    name: { type: String, required: true },
-    category: { type: String, required: true },
-    billingCycle: { type: String, required: true },
-    autoRenew: { type: Boolean, required: true },
-    amount: { type: String, required: true },
-    billingDate: { type: String, required: true },
-    logoURL: { type: String, required: true },
-    websiteURL: {type: String, required:true}
+    name: { type: String, required: false },
+    category: { type: String, required: false },
+    billingCycle: { type: String, required: false },
+    autoRenew: { type: String, required: false },
+    amount: { type: String, required: false },
+    billingDate: { type: String, required: false },
+    logoURL: { type: String, required: false },
+    websiteURL: {type: String, required:false}
   },
   { timestamps: true }
 )

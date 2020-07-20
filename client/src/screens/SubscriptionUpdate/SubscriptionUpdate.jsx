@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './SubscriptionUpdate.css'
-import Layout from '../../components/Shared/Layout/Layout'
+import Layout from '../../components/shared/Layout/Layout'
 import { Redirect, Link } from 'react-router-dom'
 import { getSubscription, updateSubscription } from '../../services/subscriptions'
 

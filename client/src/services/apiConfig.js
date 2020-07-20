@@ -4,7 +4,7 @@ let apiUrl
 
 const apiUrls = {
     production: 'https://subbusters.herokuapp.com/api',
-    development: 'http://localhost:3000/api'
+    development: 'http://localhost:3001/api'
 }
 
 if (window.location.hostname === 'localhost') {
