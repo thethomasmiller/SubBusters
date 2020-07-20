@@ -26,7 +26,7 @@ class SubscriptionCreate extends Component {
         ...this.state.subscription,
         [name]: value
       }
-
+/
     })
 
   }
