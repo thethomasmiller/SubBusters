@@ -43,9 +43,9 @@ class SubscriptionDelete extends Component {
           <p className="body">Unfortunately, we can't actually delete an account for you but if click the link below, we'll re-directyou back to your suscriber's site.</p>
           <button className="delete-link" ><Link style={{textDecoration: 'none', color: 'red'}}  className="external" to={`/subscription/${subscription.websiteURL}` } >Delete Link</Link></button>
 
-          <button className="delete-button" onClick={() => deleteSubscription(subscription._id)}>Delete Subscription</button>
+          <button className="delete-button" onClick={() => deleteSubscription(subscription._id)}>Delete from Dashboard</button>
 
-          <button className="dashboard" onClick={() => getSubscriptions(subscription)} >Back to Dashboard</button>
+          <button className="dashboard-button" onClick={() => getSubscriptions(subscription)} >Back to Dashboard</button>
       
         </div>
       </Layout>

@@ -8,8 +8,15 @@
 }
 
 .delete-button{
-  display: flex;
+  width: 150px;
+  background: #F2F2F2;
+  border: 1px solid #ABD1C6;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #db0d0d;
+  display:flex;
   justify-content: center;
+  text-align:center;
   
 }
 .delete-link{
@@ -17,12 +24,10 @@
   justify-content: center;
   border: none;
   background-color: transparent;
-  /* font-weight: ; */
-  /* color: red; */
-  /* text-decoration: none; */
+
 }
 
-p{
+.body{
   display: flex;
   text-align: center;
   justify-content: center;
@@ -40,8 +45,7 @@ button{
   margin-top: 40px;
 }
 
-.dashboard{
-  margin: 20px 15px;
+.dashboard-button{
   width: 150px;
   background: #F2F2F2;
   border: 1px solid #ABD1C6;
@@ -50,4 +54,5 @@ button{
   color: #004643;
   display:flex;
   justify-content: center;
+  text-align:center;
 }
