@@ -11,11 +11,10 @@
   flex-wrap: wrap;
   align-items: center;
   height: 250px;
-  width: 500px;
-  justify-content: space-evenly;
+  width: 600px;
+  justify-content: space-around;
   margin: auto;
   flex: 1 0 auto;
-  padding: 20px;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -23,55 +22,97 @@ input:focus, textarea:focus, select:focus {
 }
 
 input, textarea {
-  font-size: 17px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex ;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
   width: 200px ;
   background: #F2F2F2;
   border: transparent;
+  color: #C4C4C4;
 
 }
 
 textarea {
-  font-size: 17px;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
 }
 
 .input-amount {
-  font-size: 17px;
+  font-size: 13px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .input-category {
-  font-size: 17px;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+  width: 200px ;
 }
 
 .input-billing-date {
-  font-size: 18px;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+  width: 200px ;
 }
 
 .input-billing-cycle {
-  font-size: 18px;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+  width: 200px ;
+  padding: 0;
 }
 
 .input-auto-renew {
-  font-size: 18px;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+  width: 200px ;
 }
 
 .input-amount {
-  font-size: 18px;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+  width: 200px ;
 }
 
 .input-billing-date {
-  font-size: 18px;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
 }
 
+.input-logo-url {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+}
+
+.input-website-url {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+}
 
 .submit-button {
   font-size: 17px;

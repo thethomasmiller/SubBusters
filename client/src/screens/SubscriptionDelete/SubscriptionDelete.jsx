@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Layout from '../../components/Shared/Layout/Layout'
+import Layout from '../../components/shared/Layout/Layout'
 import { getSubscription, deleteSubscription, getSubscriptions } from '../../services/subscriptions'
 import { Link } from 'react-router-dom'
 import './SubscriptionDelete.css'
