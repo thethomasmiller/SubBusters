@@ -1,0 +1,52 @@
+.container{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding:px ;
+
+
+}
+
+.delete-button{
+  display: flex;
+  justify-content: center;
+  
+}
+.delete-link{
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  font-weight: ;
+  /* color: red; */
+  /* text-decoration: none; */
+}
+
+p{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 130px;
+width: 300px;
+}
+
+button{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.dashboard{
+  margin: 20px 15px;
+  width: 150px;
+  background: #F2F2F2;
+  border: 1px solid #ABD1C6;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #004643;
+  display:flex;
+  justify-content: center;
+}

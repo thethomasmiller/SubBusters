@@ -4,7 +4,7 @@ import Layout from '../../components/shared/Layout/Layout'
 import { Redirect } from 'react-router-dom'
 import { createSubscription } from '../../services/subscriptions'
 
-
+ 
 class SubscriptionCreate extends Component {
   constructor() {
     super()
@@ -21,16 +21,12 @@ class SubscriptionCreate extends Component {
       },
       created: false
     }
-  }
 
-  handleChange = (event) => {
-    const { name, value } = event.target
-    this.setState({
-      subscription: {
+  
         ...this.state.subscription,
         [name]: value
       }
-
+/
     })
 
   }
