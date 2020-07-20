@@ -27,23 +27,25 @@
 
 }
 
-.body{
+.paragraph-text{
   display: flex;
   text-align: center;
   justify-content: center;
   margin: 0 auto;
   margin-top: 130px;
-width: 300px;
-color: #004643;
+  width: 300px;
+  color: #004643;
 }
 
-button{
+.dashboard-button,
+.delete-button,
+.delete-link {
   display: flex;
   text-align: center;
   justify-content: center;
   margin: 0 auto;
   margin-top: 40px;
-}
+} 
 
 .dashboard-button{
   width: 150px;
