@@ -47,7 +47,7 @@ class SubscriptionCreate extends Component {
       }
       return (
         <Layout>
-          <div className='body'>
+          <div className='body-create'>
             <h2>Add Subscription Manually</h2>
             <form className='create-form' onSubmit={this.handleSubmit}>
               <label for='input-name'>Subscription</label>
