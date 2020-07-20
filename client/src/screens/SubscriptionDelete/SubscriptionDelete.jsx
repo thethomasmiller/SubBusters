@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Layout from '../../components/Shared/Layout/Layout'
 import { getSubscription, deleteSubscription, getSubscriptions } from '../../services/subscriptions'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import './SubscriptionDelete.css'
 
 
 class SubscriptionDelete extends Component {
@@ -18,7 +19,7 @@ class SubscriptionDelete extends Component {
         billingDate: "",
         logoURL: "",
         websiteURL: ""
-
+ 
       }
     }
   }
@@ -28,22 +29,23 @@ class SubscriptionDelete extends Component {
     const subscription = await getSubscription(id)
     this.setState({ subscription })
 
-  }
+  } 
 
   render() {
     const { subscription } = this.state
     return (
       <Layout>
-        <div>
+        <div className="container">
           <img className="logo" src={subscription.logoURL} alt={subscription.name} />
           <h2>{subscription.name}</h2>
         </div>
         <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum consectetur ligula, vel fringilla odio. Nam imperdiet mattis ante, vel.</p>
-          
-          <button className="delete-button" ><Link className="external" to={`/subscription/${subscription.websiteURL}`} >Delete Link</Link></button>
-          <button className="delete-button" onClick={()=> deleteSubscription(subscription._id)}>Delete Subscription</button>
-          <button className="dashboard" onClick={()=> getSubscriptions(subscription)} >Back to Dashboard</button>
+          <p className="body">Unfortunately, we can't actually delete an account for you but if click the link below, we'll re-directyou back to your suscriber's site.</p>
+          <button className="delete-link" ><Link style={{textDecoration: 'none', color: 'red'}}  className="external" to={`/subscription/${subscription.websiteURL}` } >Delete Link</Link></button>
+
+          <button className="delete-button" onClick={() => deleteSubscription(subscription._id)}>Delete Subscription</button>
+
+          <button className="dashboard" onClick={() => getSubscriptions(subscription)} >Back to Dashboard</button>
       
         </div>
       </Layout>
@@ -53,3 +55,4 @@ class SubscriptionDelete extends Component {
 }
 
 export default SubscriptionDelete 
+
