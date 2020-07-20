@@ -17,9 +17,6 @@
   flex: 1 0 auto;
 }
 
-input:focus, textarea:focus, select:focus {
-  outline: none;
-}
 
 input, textarea {
   display: flex ;
@@ -44,13 +41,14 @@ textarea {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.input-category {
+.input-category{
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  border: transparent;
   border-radius: 100px;
   background: #F2F2F2;
   color: #C4C4C4;
-  width: 200px ;
+  width: 200px;
 }
 
 .input-billing-date {
@@ -65,6 +63,7 @@ textarea {
 .input-billing-cycle {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  border: transparent;
   border-radius: 100px;
   background: #F2F2F2;
   color: #C4C4C4;
@@ -75,6 +74,7 @@ textarea {
 .input-auto-renew {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  border: transparent;
   border-radius: 100px;
   background: #F2F2F2;
   color: #C4C4C4;
@@ -115,11 +115,11 @@ textarea {
 }
 
 .submit-button {
+  display: flex;
   font-size: 17px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   color:#004643;
-  height: 40px;
   margin-top: 40px;
   background-color:  #F2F2F2;
   border: 1px solid #ABD1C6;
