@@ -1,12 +1,90 @@
+body {
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: #004643
+}
+
 .subscription-edit {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo-container {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
 
+.logo-container input {
+    width: 50px;
+    margin: 20px 0;
+}
+
+.logo-name,
+.logo-url {
+    border: none;
 }
 
 .edit-form {
+    display: flex;
+    flex-direction: column;
+}
 
+.edit-form input,
+.auto-renew,
+.input-category,
+.billing-cycle {
+    width: 150px;
+    height: 20px;
+    margin: 10px; 
+    padding: 0;
+    border-radius: 4px;
+    border: none;
+    background-color: #E5E5E5;
+}
+
+.auto-renew,
+.input-category,
+.billing-cycle {
+    appearance: none;
+}
+
+.change-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.unsubscribe-button {
+    margin: 20px 15px;
+    width: 90px;
+    background: #F2F2F2;
+    border: 1px solid rgba(225, 97, 98, 0.25);
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #E16162;
+}
+
+.update-button {
+    margin: 20px 15px;
+    width: 70px;
+    background: #F2F2F2;
+    border: 1px solid #ABD1C6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #004643;
 }
 

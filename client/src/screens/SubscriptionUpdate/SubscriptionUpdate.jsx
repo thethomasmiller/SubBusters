@@ -71,9 +71,20 @@ render() {
                         required
                         onChange={this.handleChange}
                     />
+                    <input
+                        className='logo-name'
+                        placeholder='Name'
+                        value={subscription.name}
+                        name='name'
+                        required
+                        autoFocus
+                        onChange={this.handleChange}
+                    />
                     </form>
                 </div>
                 <form className='edit-form' onSubmit={this.handleSubmit}>
+                    <div className="flex-row">
+                    <p>Name</p> 
                     <input
                         className='input-name'
                         placeholder='Name'
@@ -83,30 +94,55 @@ render() {
                         autoFocus
                         onChange={this.handleChange}
                     />
-                    <input
+                    </div>
+                    <div className="flex-row">
+                    <p>Category</p>
+                    <select className='input-category'>
+                        <option value={subscription.category}>{`${subscription.category}`}</option>
+                        <option value='music'>Music</option>
+                        <option value='movies'>Movies &amp; TV</option>
+                        <option value='software'>Software</option>
+                        <option value='gaming'>Gaming</option>
+                        <option value='news'>News</option>
+                        <option value='other'>Other</option>
+                        
+                    </select>
+                    {/* <input
                         className='input-category'
                         placeholder='Category'
                         value={subscription.category}
                         name='category'
                         required
                         onChange={this.handleChange}
-                    />
-                    <input
+                    /> */}
+                    </div>
+                    <div className="flex-row">
+                    <p>Billing Cycle</p>
+                    <select className='billing-cycle'>
+                        <option value={subscription.billingCycle}>{`${subscription.billingCycle}`}</option>
+                        <option value='monthly'>Monthly</option>
+                        <option value='quarterly'>Quarterly</option>
+                        <option value='yearly'>Yearly</option>
+                    </select>
+                    {/* <input
                         className='billing-cycle'
                         placeholder='Billing Cycle'
                         value={subscription.billingCycle}
                         name='billing-cycle'
                         required
                         onChange={this.handleChange}
-                    />
-                    <input
-                        className='auto-renew'
-                        placeholder='Auto renew'
-                        value={subscription.autoRenew}
-                        name='auto-renew'
-                        required
-                        onChange={this.handleChange}
-                    />
+                    /> */}
+                    </div>
+                    <div className="flex-row">
+                    <p>Auto Renew</p>
+                    <select className='auto-renew'>
+                        <option value={subscription.autoRenew}>{`${subscription.autoRenew}`}</option>
+                        <option value='yes'>YES</option>
+                        <option value='no'>NO</option>
+                    </select>
+                    </div>
+                    <div className="flex-row">
+                    <p>Amount</p>
                     <input
                         className='amount'
                         placeholder='Amount'
@@ -115,14 +151,20 @@ render() {
                         required
                         onChange={this.handleChange}
                     />
+                    </div>
+                    <div className="flex-row">
+                    <p>Billing Date</p>
                     <input
                         className='billing-date'
-                        placeholder='Billing Date'
+                        placeholder='MM/DD/YY'
                         value={subscription.billingDate}
                         name='billing-date'
                         required
                         onChange={this.handleChange}
                     />
+                    </div>
+                    <div className="flex-row">
+                    <p>Website</p>
                     <input
                         className='website-url'
                         placeholder='Website'
@@ -131,9 +173,12 @@ render() {
                         required
                         onChange={this.handleChange}
                     />
+                    </div>
                 </form>
+                <div className="change-buttons">
+                <button type='submit' className='unsubscribe-button'>Unsubscribe</button>
             <button type='submit' className='update-button'>Update</button>
-            <Link to='/SubscriptionDelete'>Do you want to cancel your subscription?</Link>
+            </div>
             </div>
         </Layout>
     </>)
