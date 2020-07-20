@@ -17,7 +17,7 @@
   justify-content: center;
   border: none;
   background-color: transparent;
-  font-weight: ;
+  /* font-weight: ; */
   /* color: red; */
   /* text-decoration: none; */
 }
@@ -29,6 +29,7 @@ p{
   margin: 0 auto;
   margin-top: 130px;
 width: 300px;
+color: #004643;
 }
 
 button{
