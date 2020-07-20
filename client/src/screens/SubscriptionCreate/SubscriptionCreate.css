@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
  
 .create-form {
@@ -11,7 +12,7 @@
   flex-wrap: wrap;
   align-items: center;
   height: 250px;
-  width: 600px;
+  width: 625px;
   justify-content: space-around;
   margin: auto;
   flex: 1 0 auto;
