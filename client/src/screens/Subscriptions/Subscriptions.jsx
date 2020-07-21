@@ -3,7 +3,8 @@ import './Subscriptions.css'
 import Layout from '../../components/shared/Layout/Layout'
 import SubscriptionInfo from '../../components/SubscriptionInfo/SubscriptionInfo'
 import { Link } from 'react-router-dom'
-import {getSubscriptions} from '../../services/subscriptions'
+import { getSubscriptions } from '../../services/subscriptions'
+import profilePic from '../../assets/images/profilePic.png'
 
 
 
@@ -48,33 +49,28 @@ class Subscriptions extends Component {
     
   return (
     <Layout>
-      <div className="user-header"><h3 className="user-greeting">Whoa, Jamie</h3></div>
+      <div className="user-header"><img src={`${profilePic}`}/><h3 className="user-greeting">Whoa, Jamie</h3></div>
       <div classname="body-subscriptions">
         <section className="subscriptions-alert">
           <span>
             We've found subscriptions you haven't used for a while on this device.
            </span>
-           <br/>
           <span>
             If you've been using them in other places that's cool, just close out the table.
             </span>
-            <br/>
           <span>
             If these are Ghost Subscriptions,click the subscription to find out how to cancel.
             </span>
         </section>
 
         
-        <div className="movies-list">
-          <p className="box-bottom-border">Movies &amp; TV</p>
+        <div>
           {moviesList}
         </div>
-        <div className="music-list">
-          <p className="box-bottom-border">Music</p>
+        <div>
           {musicList}
         </div>
-        <div className="software-list">
-        <p className="box-bottom-border">Software</p>
+        <div>
           {softwareList}
         </div>
         <div>
