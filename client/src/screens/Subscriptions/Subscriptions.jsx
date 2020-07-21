@@ -64,13 +64,13 @@ class Subscriptions extends Component {
         </section>
 
         
-        <div>
+        <div className='movies-list'>
           {moviesList}
         </div>
-        <div>
+        <div className='music-list'>
           {musicList}
         </div>
-        <div>
+        <div className='sofware-list'>
           {softwareList}
         </div>
         <div>
