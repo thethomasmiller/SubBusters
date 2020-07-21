@@ -2,7 +2,7 @@ const db = require('../db/connection')
 const Subscription = require('../models/subscription')
 //import adobe from '../assets/logos/adobe.png'
 //import formstack from '../assets/logos/formstack.png'
-import Hulu from '../assets/logos/Hulu.png'
+const Hulu = require('../assets/logos/Hulu.png')
 //import itunes from '../../assets/logos/itunes.png'
 import Netflix from '../../assets/logos/Netflix.png'
 //import pandora from '../../assets/logos/pandora.png'
