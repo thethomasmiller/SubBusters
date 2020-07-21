@@ -1,5 +1,13 @@
 const db = require('../db/connection')
 const Subscription = require('../models/subscription')
+//import adobe from '../assets/logos/adobe.png'
+//import formstack from '../assets/logos/formstack.png'
+import Hulu from '../assets/logos/Hulu.png'
+//import itunes from '../../assets/logos/itunes.png'
+import Netflix from '../../assets/logos/Netflix.png'
+//import pandora from '../../assets/logos/pandora.png'
+//import Prime from '../../assets/logos/Prime.png'
+//import Spotify from '../../assets/logos/Spotify.png'
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -13,8 +21,8 @@ const main = async () => {
         "autoRenew": true,
         "amount": "14.99",
         "billingDate": "Jun 16",
-        "logoURL": "",
-        "websiteURL":""
+        "logoURL": `${Netflix}`,
+        "websiteURL": ""
       },
       {
         "name": "Hulu",
@@ -23,7 +31,7 @@ const main = async () => {
         "autoRenew": true,
         "amount": "8.99",
         "billingDate": "Nov 23",
-        "logoURL": "",
+        "logoURL": `${Hulu}`,
         "websiteURL":"http://netflix.com"
       },
       {

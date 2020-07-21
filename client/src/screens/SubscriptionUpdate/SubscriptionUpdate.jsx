@@ -61,7 +61,7 @@ render() {
         <Layout>
         <div className='subscription-edit'>
             <div className='logo-container'>
-                <img className="edit-logo" src={subscription.imgURL} alt={subscription.name} />
+                <img className="edit-logo" src={subscription.logoURL} alt={subscription.name} />
                 <form onSubmit={this.handleSubmit}>
                     <input
                         className='logo-url'
