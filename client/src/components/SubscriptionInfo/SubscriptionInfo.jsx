@@ -1,6 +1,6 @@
 import React from 'react'
 import './SubscriptionInfo.css'
-import subscription from '../../../../models/subscription'
+
 
 const SubscriptionInfo = (props) => {
 
