@@ -1,0 +1,23 @@
+.subscriptions-alert{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+
+
+.user-header{
+display: flex;
+justify-content: center;
+background-color:#FBD090 ;
+border-top: 2px solid #ABD1C6;
+
+}
+
+.user-greeting{
+
+}
+
