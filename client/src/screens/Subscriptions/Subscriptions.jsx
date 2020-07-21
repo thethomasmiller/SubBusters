@@ -74,7 +74,7 @@ class Subscriptions extends Component {
         <p className="box-bottom-border">Music</p>
           {musicList}
         </div>
-        <div className='sofware-list'>
+        <div className='software-list'>
         <p className="box-bottom-border">Software</p>
           {softwareList}
         </div>
