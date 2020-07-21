@@ -49,7 +49,14 @@ class Subscriptions extends Component {
     
   return (
     <Layout>
-      <div className="user-header"><img src={`${profilePic}`}/><h3 className="user-greeting">Whoa, Jamie</h3></div>
+
+      
+
+      <div className="user-header">
+        <img src={`${profilePic}`} className='profile-image' />
+        <h3 className="user-greeting">Whoa, Jamie</h3>
+      </div>
+
       <div className="body-subscriptions">
         <section className="subscriptions-alert">
           <span>
