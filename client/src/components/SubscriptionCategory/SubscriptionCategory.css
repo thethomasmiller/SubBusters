@@ -1,7 +1,7 @@
 .movies,
 .music,
 .software{
-  border:3px solid yellow;
+  border:3px solid #FBD090;
   display: flex;
   text-align: flex-start;
   width: 300px;
@@ -13,7 +13,7 @@
 }
 
 .category-box{
-  border: 3px solid yellow;
+  border: 3px solid #FBD090;
   width: 300px;
   border-radius: 10px;
 }
