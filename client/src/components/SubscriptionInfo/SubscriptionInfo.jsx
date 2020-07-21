@@ -6,7 +6,7 @@ const SubscriptionInfo = (props) => {
 
     return(<>
 
-    <div>   
+    <div className="subscription-info">   
         <img src={props.logoURL}></img>
         <p>{props.name}</p>
         <p>{props.billingDate}</p>
