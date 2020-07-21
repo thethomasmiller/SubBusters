@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  background-color: #FBD090;
+  font-family: 'Lato';
+}
+
+header{
+  background-color: #FBD090;
+}
+
+h1{
+  margin: auto;
+  padding: 25px;
+  color: #004643;
+}

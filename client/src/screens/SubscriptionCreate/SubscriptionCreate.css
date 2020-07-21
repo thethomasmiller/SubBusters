@@ -1,0 +1,120 @@
+.body-create{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.create-form {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 250px;
+  width: 625px;
+  justify-content: space-around;
+  margin: auto;
+  flex: 1 0 auto;
+}
+
+
+input, textarea {
+  display: flex ;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  width: 200px ;
+  background: #F2F2F2;
+  border: transparent;
+  color: #C4C4C4;
+
+}
+
+textarea {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+}
+
+.input-amount {
+  font-size: 13px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.input-billing-date {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+  width: 200px ;
+}
+
+.input-billing-cycle {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: transparent;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+  width: 200px ;
+  padding: 0;
+}
+
+.input-auto-renew {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: transparent;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+  width: 200px ;
+}
+
+.input-amount {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+  width: 200px ;
+}
+
+.input-billing-date {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+}
+
+.input-logo-url {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+}
+
+.input-website-url {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background: #F2F2F2;
+  color: #C4C4C4;
+}
+
+.submit-button {
+  display: flex;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color:#004643;
+  margin-top: 40px;
+  background-color:  #F2F2F2;
+  border: 1px solid #ABD1C6;
+  border-radius: 5px;
+  cursor: pointer;
+}

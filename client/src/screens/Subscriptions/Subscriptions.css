@@ -1,0 +1,39 @@
+.subscriptions-alert{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.user-header{
+display: flex;
+justify-content: center;
+background-color:#FBD090 ;
+border-top: 2px solid #ABD1C6;
+}
+
+.user-greeting{
+  
+}
+
+.movies-list,
+.music-list,
+.software-list {
+    border: 1.2px solid #FBD090;
+    border-radius: 5px;
+    margin: 40px;
+}
+
+.box-bottom-border {
+  border-bottom: 1.2px solid #FBD090;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+
+}

@@ -1,0 +1,19 @@
+.movies,
+.music,
+.software{
+  border:3px solid #FBD090;
+  display: flex;
+  text-align: flex-start;
+  width: 300px;
+  margin-bottom: 100px;
+  /* padding: 100px; */
+  padding-top: 0px;
+  padding-left: 0px;
+
+}
+
+.category-box{
+  border: 3px solid #FBD090;
+  width: 300px;
+  border-radius: 10px;
+}
