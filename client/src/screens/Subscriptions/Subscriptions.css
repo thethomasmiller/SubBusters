@@ -11,6 +11,7 @@
 .user-header{
 display: flex;
 justify-content: center;
+align-items: center;
 background-color:#FBD090 ;
 border-top: 2px solid #ABD1C6;
 }
@@ -35,5 +36,12 @@ border-top: 2px solid #ABD1C6;
   line-height: 20px;
   padding-left: 20px;
   padding-bottom: 15px;
+
+}
+
+.profile-image{
+  
+  height: 40px;
+  padding-right: 3px;
 
 }

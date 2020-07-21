@@ -1,15 +1,14 @@
 .header {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #FBD090;
-  font-family: 'Lato';
+  font-family: 'Lato'; 
+  color: #004643;
 }
-
 header{
   background-color: #FBD090;
 }
-
-h1{
-  margin: auto;
-  padding: 25px;
-  color: #004643;
+.header-ghost{
+  height: 40px;
 }
