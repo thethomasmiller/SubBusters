@@ -59,7 +59,7 @@ const main = async () => {
         "websiteURL":"https://www.adobe.com"
       },
       {
-        "namee": "Spotify",
+        "name": "Spotify",
         "category":"Music",
         "billingCycle": "Monthly",
         "autoRenew": true,
