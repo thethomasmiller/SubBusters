@@ -5,6 +5,7 @@ import { Redirect, Link } from 'react-router-dom'
 import { getSubscription, updateSubscription } from '../../services/subscriptions'
 
 
+
 class SubscriptionUpdate extends Component {
     constructor(props) {
         super(props)
@@ -54,7 +55,7 @@ render() {
     const { subscription, updated } = this.state
     
     if (updated) {
-        return <Redirect to={`/subscriptions/${this.props.match.params.id}`} />
+        return <Redirect to={`/subscriptions`} />
     } 
 
     return (<>
@@ -107,14 +108,6 @@ render() {
                         <option value='other'>Other</option>
                         
                     </select>
-                    {/* <input
-                        className='input-category'
-                        placeholder='Category'
-                        value={subscription.category}
-                        name='category'
-                        required
-                        onChange={this.handleChange}
-                    /> */}
                     </div>
                     <div className="flex-row">
                     <p>Billing Cycle</p>
@@ -124,14 +117,6 @@ render() {
                         <option value='quarterly'>Quarterly</option>
                         <option value='yearly'>Yearly</option>
                     </select>
-                    {/* <input
-                        className='billing-cycle'
-                        placeholder='Billing Cycle'
-                        value={subscription.billingCycle}
-                        name='billing-cycle'
-                        required
-                        onChange={this.handleChange}
-                    /> */}
                     </div>
                     <div className="flex-row">
                     <p>Auto Renew</p>
@@ -174,11 +159,17 @@ render() {
                         onChange={this.handleChange}
                     />
                     </div>
-                </form>
+                
                 <div className="change-buttons">
-                <button type='submit' className='unsubscribe-button'>Unsubscribe</button>
+
+                <Link to={`/subscriptions/${this.props.match.params.id}`}> 
+                <button className='unsubscribe-button'>Unsubscribe</button>
+            </Link>
             <button type='submit' className='update-button'>Update</button>
+            
             </div>
+            </form>
+            
             </div>
         </Layout>
     </>)
