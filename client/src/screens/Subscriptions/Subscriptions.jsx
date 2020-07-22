@@ -25,23 +25,23 @@ class Subscriptions extends Component {
  
   render() {
     const musicList = this.state.allSubscriptions.filter(sub => sub.category === 'Music').map((entertainment, index)=>
-      <SubscriptionInfo _id={entertainment._id} logoURL={entertainment.logoURL} name={entertainment.charge} billingDate={entertainment.lastUsed} amount={entertainment.amount} key={index} />
+      <SubscriptionInfo _id={entertainment._id} logoURL={entertainment.logoURL} name={entertainment.name} billingDate={entertainment.billingDate} amount={entertainment.amount} key={index} />
     )
 
     const moviesList = this.state.allSubscriptions.filter(sub => sub.category === 'Movies and TV').map((entertainment, index)=>
-    <SubscriptionInfo _id={entertainment._id} logoURL={entertainment.logoURL} name={entertainment.charge} billingDate={entertainment.lastUsed} amount={entertainment.amount} key={index} />
+    <SubscriptionInfo _id={entertainment._id} logoURL={entertainment.logoURL} name={entertainment.name} billingDate={entertainment.billingDate} amount={entertainment.amount} key={index} />
     )
     
     const softwareList = this.state.allSubscriptions.filter(sub => sub.category === 'Software').map((entertainment, index)=>
-    <SubscriptionInfo _id={entertainment._id} logoURL={entertainment.logoURL} name={entertainment.charge} billingDate={entertainment.lastUsed} amount={entertainment.amount} key={index} />
+    <SubscriptionInfo _id={entertainment._id} logoURL={entertainment.logoURL} name={entertainment.name} billingDate={entertainment.billingDate} amount={entertainment.amount} key={index} />
     )
     
     const gamingList = this.state.allSubscriptions.filter(sub => sub.category === 'Gaming').map((entertainment, index)=>
-    <SubscriptionInfo _id={entertainment._id} logoURL={entertainment.logoURL} name={entertainment.charge} billingDate={entertainment.lastUsed} amount={entertainment.amount} key={index} />
+    <SubscriptionInfo _id={entertainment._id} logoURL={entertainment.logoURL} name={entertainment.name} billingDate={entertainment.billingDate} amount={entertainment.amount} key={index} />
     )
 
     const newsList = this.state.allSubscriptions.filter(sub => sub.category === 'News').map((entertainment, index)=>
-    <SubscriptionInfo _id={entertainment._id} logoURL={entertainment.logoURL} name={entertainment.charge} billingDate={entertainment.lastUsed} amount={entertainment.amount} key={index} />
+    <SubscriptionInfo _id={entertainment._id} logoURL={entertainment.logoURL} name={entertainment.name} billingDate={entertainment.billingDate} amount={entertainment.amount} key={index} />
   )
 
 

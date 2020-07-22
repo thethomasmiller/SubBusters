@@ -13,7 +13,7 @@ class SubscriptionCreate extends Component {
       subscription: {
         name: '',
         category: '',
-        billingCycyle: '',
+        billingCycle: '',
         autoRenew: '',
         amount: '',
         billingDate: '',
@@ -62,15 +62,15 @@ class SubscriptionCreate extends Component {
             <label for='input-category'>Category</label>
             <select name='category' className='input-billing-cycle' onChange={this.handleChange}  >
               <option value=''>Select</option>
-              <option value='music'>Music</option>
-              <option value='movies and tv'>Movies & TV</option>
-              <option value='software'>Software</option>
-              <option value='gaming'>Gaming</option>
-              <option value='news'>News</option>
+              <option value='Music'>Music</option>
+              <option value='Movies and TV'>Movies & TV</option>
+              <option value='Software'>Software</option>
+              <option value='Gaming'>Gaming</option>
+              <option value='News'>News</option>
             </select>
 
             <label for='input-billing-cycle'>Billing Cycle</label>
-            <select name='billing-cycle' className='input-billing-cycle' onChange={this.handleChange}  >
+            <select name='billingCycle' className='input-billing-cycle' onChange={this.handleChange}  >
               <option value=''>Select</option>
               <option value='monthly'>Monthly</option>
               <option value='quarterly'>Quarterly</option>
@@ -79,7 +79,7 @@ class SubscriptionCreate extends Component {
 
 
             <label for='input-auto-renew'>Auto-Renew</label>
-            <select name='auto-renew' className='input-auto-renew' onChange={this.handleChange}  >
+            <select name='autoRenew' className='input-auto-renew' onChange={this.handleChange}  >
               <option value=''>Select</option>
               <option value='true'>Yes</option>
               <option value='false'>No</option>
