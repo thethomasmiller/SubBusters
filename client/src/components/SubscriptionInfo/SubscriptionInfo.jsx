@@ -1,6 +1,7 @@
 import React from 'react'
 import './SubscriptionInfo.css'
 import iconPlus from '../../assets/icons/iconPlus.png'
+import { Link } from 'react-router-dom'
 
 
 const SubscriptionInfo = (props) => {
@@ -12,7 +13,7 @@ const SubscriptionInfo = (props) => {
         <p>{props.name}</p>
         <p>{props.billingDate}</p>
         <p>${props.amount}</p>
-        <img src={iconPlus}></img>
+        <Link to = {`/subscriptions/${props._id}/update`}><img className="logo-icon" src={iconPlus}></img></Link>
     </div>
    
     </>)
