@@ -11,7 +11,7 @@ const SubscriptionInfo = (props) => {
         <img src={props.logoURL}></img>
         <p>{props.name}</p>
         <p>{props.billingDate}</p>
-        <p>{props.amount}</p>
+        <p>${props.amount}</p>
         <img src={iconPlus}></img>
     </div>
    
