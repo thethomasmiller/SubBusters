@@ -9,8 +9,37 @@
 .input-email{
   display: flex;
   padding: 5px;
+  border: none;
+
 }
 
 .input-password{
   display: flex;
+  border: none;
+  margin-top: 15px;
 }
+
+.new-member{
+  position:absolute;
+   bottom:50px; 
+   width: 180px;
+
+}
+
+.login-button{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 70px;
+  font-size: medium;
+  color: #004643;
+  font-weight: 600;
+
+}
+
+.input-email,
+.input-password{
+  background-color: transparent;
+  border-bottom: 3px solid #004643;
+  border-radius: 0%;
+}
+

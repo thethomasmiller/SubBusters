@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import './SubscriptionDelete.css'
 
 
+
 class SubscriptionDelete extends Component {
   constructor() {
     super()
@@ -40,17 +41,17 @@ class SubscriptionDelete extends Component {
           <h2>{subscription.name}</h2>
         </div>
         <div>
-          <p className="paragraph-text">Unfortunately, we can't actually delete an account for you but if click the link below, we'll re-directyou back to your suscriber's site.</p>
+          <p className="paragraph-text">Unfortunately, we can't actually delete an account for you but if you click the link below, we'll re-direct you back to your suscriber's site.</p>
           <button className="delete-link" ><Link style={{textDecoration: 'none', color: 'red'}}  className="external" to={`/subscription/${subscription.websiteURL}` } >Delete Link</Link></button>
 
-          <button className="delete-button" onClick={() => deleteSubscription(subscription._id)}>Delete from Dashboard</button>
+          <button className="delete-button" onClick={() => deleteSubscription(subscription._id)}><Link to={`/subscriptions`}>Delete from Dashboard</Link></button>
 
-          <button className="dashboard-button" onClick={() => getSubscriptions(subscription)} >Back to Dashboard</button>
+          <button className="dashboard-button" onClick={() => getSubscriptions(subscription)} ><Link to={`/subscriptions`} >Back to Dashboard</Link></button>
       
         </div>
       </Layout>
 
-    )
+    ) 
   }
 }
 

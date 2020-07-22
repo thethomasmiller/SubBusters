@@ -11,13 +11,11 @@
 .user-header{
 display: flex;
 justify-content: center;
+align-items: center;
 background-color:#FBD090 ;
 border-top: 2px solid #ABD1C6;
 }
 
-.user-greeting{
-  
-}
 
 .movies-list,
 .music-list,
@@ -36,4 +34,16 @@ border-top: 2px solid #ABD1C6;
   padding-left: 20px;
   padding-bottom: 15px;
 
+}
+
+.profile-image{
+  height: 40px;
+  padding-right: 3px;
+}
+
+.add-subscription-link-button {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

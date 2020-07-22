@@ -5,6 +5,7 @@ import { Redirect, Link } from 'react-router-dom'
 import { getSubscription, updateSubscription } from '../../services/subscriptions'
 
 
+
 class SubscriptionUpdate extends Component {
     constructor(props) {
         super(props)
@@ -54,23 +55,15 @@ render() {
     const { subscription, updated } = this.state
     
     if (updated) {
-        return <Redirect to={`/subscriptions/${this.props.match.params.id}`} />
+        return <Redirect to={`/subscriptions`} />
     } 
 
     return (<>
         <Layout>
         <div className='subscription-edit'>
             <div className='logo-container'>
-                <img className="edit-logo" src={subscription.imgURL} alt={subscription.name} />
+                <img className="edit-logo" src={subscription.logoURL} alt={subscription.name} />
                 <form onSubmit={this.handleSubmit}>
-                    <input
-                        className='logo-url'
-                        placeholder='Logo'
-                        value={subscription.logoURL}
-                        name='logo-url'
-                        required
-                        onChange={this.handleChange}
-                    />
                     <input
                         className='logo-name'
                         placeholder='Name'
@@ -107,14 +100,6 @@ render() {
                         <option value='other'>Other</option>
                         
                     </select>
-                    {/* <input
-                        className='input-category'
-                        placeholder='Category'
-                        value={subscription.category}
-                        name='category'
-                        required
-                        onChange={this.handleChange}
-                    /> */}
                     </div>
                     <div className="flex-row">
                     <p>Billing Cycle</p>
@@ -124,14 +109,6 @@ render() {
                         <option value='quarterly'>Quarterly</option>
                         <option value='yearly'>Yearly</option>
                     </select>
-                    {/* <input
-                        className='billing-cycle'
-                        placeholder='Billing Cycle'
-                        value={subscription.billingCycle}
-                        name='billing-cycle'
-                        required
-                        onChange={this.handleChange}
-                    /> */}
                     </div>
                     <div className="flex-row">
                     <p>Auto Renew</p>
@@ -158,7 +135,7 @@ render() {
                         className='billing-date'
                         placeholder='MM/DD/YY'
                         value={subscription.billingDate}
-                        name='billing-date'
+                        name='billingDate'
                         required
                         onChange={this.handleChange}
                     />
@@ -169,16 +146,21 @@ render() {
                         className='website-url'
                         placeholder='Website'
                         value={subscription.websiteURL}
-                        name='website-url'
-                        required
+                        name='websiteURL'
                         onChange={this.handleChange}
                     />
                     </div>
-                </form>
+                
                 <div className="change-buttons">
-                <button type='submit' className='unsubscribe-button'>Unsubscribe</button>
+
+                <Link to={`/subscriptions/${this.props.match.params.id}`}> 
+                <button className='unsubscribe-button'>Unsubscribe</button>
+            </Link>
             <button type='submit' className='update-button'>Update</button>
+            
             </div>
+            </form>
+            
             </div>
         </Layout>
     </>)

@@ -1,4 +1,11 @@
 .subscription-info {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
+
+.subscription-info img {
+    width: 15px;
+    height: 100%;
+}
+
