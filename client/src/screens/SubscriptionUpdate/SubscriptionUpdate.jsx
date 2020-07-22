@@ -65,14 +65,6 @@ render() {
                 <img className="edit-logo" src={subscription.logoURL} alt={subscription.name} />
                 <form onSubmit={this.handleSubmit}>
                     <input
-                        className='logo-url'
-                        placeholder='Logo'
-                        value={subscription.logoURL}
-                        name='logo-url'
-                        required
-                        onChange={this.handleChange}
-                    />
-                    <input
                         className='logo-name'
                         placeholder='Name'
                         value={subscription.name}
