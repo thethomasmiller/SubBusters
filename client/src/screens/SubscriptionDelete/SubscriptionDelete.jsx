@@ -3,7 +3,7 @@ import Layout from '../../components/shared/Layout/Layout'
 import { getSubscription, deleteSubscription, getSubscriptions } from '../../services/subscriptions'
 import { Link } from 'react-router-dom'
 import './SubscriptionDelete.css'
-import Subscriptions from '../../screens/Subscriptions/Subscriptions'
+
 
 
 class SubscriptionDelete extends Component {
