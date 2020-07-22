@@ -1,5 +1,6 @@
 import React from 'react'
 import './SubscriptionInfo.css'
+import iconPlus from '../../assets/icons/iconPlus.png'
 
 
 const SubscriptionInfo = (props) => {
@@ -11,6 +12,7 @@ const SubscriptionInfo = (props) => {
         <p>{props.name}</p>
         <p>{props.billingDate}</p>
         <p>{props.amount}</p>
+        <img src={iconPlus}></img>
     </div>
    
     </>)
