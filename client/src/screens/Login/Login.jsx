@@ -7,13 +7,13 @@ export default function Login() {
     <div>
       <Layout>
         <div className='input-login'>
-        <div className='input-email'><label>email</label><input></input></div>
-         <div className='input-password'><label>password</label><input></input></div> 
-        <button>Login</button>
-        <div><a>New Member? Sign Up</a></div>
+        <div className='input-email'><label>Email</label><input></input></div>
+         <div className='input-password'><label>Password</label><input></input></div> 
+        <button className='login-button' >Login</button>
+        <div className="new-member"><a className="new-member">New Member? Sign Up</a></div>
           </div>
       </Layout>
-    </div>
+    </div> 
   )
 }
 
