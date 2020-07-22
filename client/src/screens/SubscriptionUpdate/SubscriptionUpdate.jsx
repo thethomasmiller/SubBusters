@@ -143,7 +143,7 @@ render() {
                         className='billing-date'
                         placeholder='MM/DD/YY'
                         value={subscription.billingDate}
-                        name='billing-date'
+                        name='billingDate'
                         required
                         onChange={this.handleChange}
                     />
@@ -154,8 +154,7 @@ render() {
                         className='website-url'
                         placeholder='Website'
                         value={subscription.websiteURL}
-                        name='website-url'
-                        required
+                        name='websiteURL'
                         onChange={this.handleChange}
                     />
                     </div>
