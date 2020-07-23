@@ -4,6 +4,7 @@ import Layout from '../../components/shared/Layout/Layout'
 import { Redirect, Link } from 'react-router-dom'
 import { getSubscription, updateSubscription } from '../../services/subscriptions'
 import profilePic from '../../assets/images/profilePic.png'
+//import iconArrow from '../../assets/icons/iconArrow.png'
 
 
 

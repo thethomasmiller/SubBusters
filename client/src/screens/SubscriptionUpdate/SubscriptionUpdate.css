@@ -73,6 +73,10 @@
 .billing-cycle {
     appearance: none;
     padding-left: 14px;
+    background-image: url(https://res.cloudinary.com/alienora/image/upload/v1595522596/icon_y6feqw.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-position-y: center;
 }
 
 .input-name,
@@ -88,7 +92,7 @@
 }
 
 .unsubscribe-button {
-    margin: 20px 15px;
+    margin: 20px 15px 80px 15px;
     width: 120px;
     background: #F2F2F2;
     border: 1px solid rgba(225, 97, 98, 0.25);
@@ -102,7 +106,7 @@
 }
 
 .update-button {
-    margin: 20px 15px;
+    margin: 20px 15px 80px 15px;
     width: 80px;
     background: #F2F2F2;
     border: 1px solid #ABD1C6;
