@@ -11,4 +11,10 @@ header{
 }
 .header-ghost{
   height: 40px;
+  padding-right: 10px;
+}
+
+.header-subbusters,
+.header-subbusters a:visited{
+  color: #004643;
 }

@@ -6,6 +6,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
  
+.add-subscription-title{
+  margin-top: 100px;
+
+}
+
+
 .create-form {
   padding-top: 50px;
   display: flex;
@@ -13,11 +19,14 @@
   align-items: center;
   height: 250px;
   width: 625px;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
   flex: 1 0 auto;
 }
 
+.create-label{
+  width: 100px;
+}
 
 input, textarea {
   display: flex ;
@@ -28,14 +37,11 @@ input, textarea {
   background: #F2F2F2;
   border: transparent;
   color: #C4C4C4;
+  text-indent: 10px;
+  height: 26px;
 
 }
 
-textarea {
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-}
 
 .input-amount {
   font-size: 13px;
@@ -43,7 +49,7 @@ textarea {
 }
 
 
-.input-billing-date {
+.input-name {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
@@ -52,15 +58,22 @@ textarea {
   width: 200px ;
 }
 
-.input-billing-cycle {
+.create-dropdown {
+  appearance: none;
+  background-image: url(https://res.cloudinary.com/alienora/image/upload/v1595523020/icon_1_uzvvbm.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-color:#F2F2F2;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  text-indent: 10px ;
   border: transparent;
   border-radius: 100px;
-  background: #F2F2F2;
   color: #C4C4C4;
   width: 200px ;
   padding: 0;
+  height: 26px;
 }
 
 .input-auto-renew {
@@ -68,7 +81,7 @@ textarea {
   font-family: Arial, Helvetica, sans-serif;
   border: transparent;
   border-radius: 100px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #C4C4C4;
   width: 200px ;
 }
@@ -77,24 +90,26 @@ textarea {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #C4C4C4;
   width: 200px ;
+  height: 26px;
 }
 
 .input-billing-date {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #C4C4C4;
+  height: 26px;
 }
 
 .input-logo-url {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #C4C4C4;
 }
 
@@ -102,7 +117,7 @@ textarea {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #C4C4C4;
 }
 
@@ -117,4 +132,48 @@ textarea {
   border: 1px solid #ABD1C6;
   border-radius: 5px;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+.create-form {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 250px;
+  align-items: start;
+  margin-top: 10px;
+ 
+}
+.submit-button{
+  margin-left: auto ;
+}
+
+.add-subscription-title{
+  margin-top: 40px;
+}
+
+input {
+  width: 250px;
+  margin-bottom: 10px;
+}
+.input-name{
+  width: 250px;
+  margin-bottom: 10px;
+}
+.input-auto-renew {
+  width: 254px;
+}
+.input-amount{
+  width: 254px;
+}
+.input-billing-cycle{
+  width: 254px;
+}
+
 }
