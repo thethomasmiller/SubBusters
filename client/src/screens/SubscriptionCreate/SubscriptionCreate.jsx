@@ -29,7 +29,8 @@ class SubscriptionCreate extends Component {
     this.setState({
       subscription: {
         ...this.state.subscription,
-        [name]: value
+        [name]: value,
+        logoURL:"https://res.cloudinary.com/alienora/image/upload/v1595446140/Subscription_logo_placeholder_on9w2v.png"
       }
     })
   }
@@ -111,16 +112,8 @@ class SubscriptionCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
-            <label for='input-logo-url' className='create-label'>Logo URL</label>
-            <input
-              className='input-logo-url'
-              placeholder='Enter URL'
-              value={subscription.logoURL}
-              name='logoURL'
-
-              autoFocus
-              onChange={this.handleChange}
-            />
+            
+            <div className='create-website'>
             <label for='input-website-url'className='create-label'>Website</label>
             <input
               className='website-url'
@@ -131,6 +124,7 @@ class SubscriptionCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
+            </div>
             <div>
               <button type='submit' className="submit-button">Add</button>
             </div>

@@ -8,6 +8,8 @@
  
 .add-subscription-title{
   margin-top: 100px;
+  color: black;
+  font-weight: bold;
 
 }
 
@@ -36,12 +38,15 @@ input, textarea {
   width: 200px ;
   background: #F2F2F2;
   border: transparent;
-  color: #C4C4C4;
+  color: #707070;
   text-indent: 10px;
   height: 26px;
 
 }
-
+.create-website{
+  display: flex;
+  align-items: center;
+}
 
 .input-amount {
   font-size: 13px;
@@ -67,10 +72,10 @@ input, textarea {
   background-color:#F2F2F2;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  text-indent: 10px ;
+  text-indent: 15px ;
   border: transparent;
   border-radius: 100px;
-  color: #C4C4C4;
+  color: #707070;
   width: 200px ;
   padding: 0;
   height: 26px;
@@ -146,15 +151,25 @@ input, textarea {
   flex-wrap: nowrap;
   justify-content: center;
   width: 250px;
+  height: auto;
+  padding-top: 10px;
+  margin-bottom: 25px;
   align-items: start;
   margin-top: 10px;
  
 }
+
+.create-website{
+  flex-direction: column;
+  align-items: start;
+}
+
 .submit-button{
-  margin-left: auto ;
+  margin: 10px 100px 50px;
 }
 
 .add-subscription-title{
+  font-size: 18px;
   margin-top: 40px;
 }
 
@@ -175,5 +190,12 @@ input {
 .input-billing-cycle{
   width: 254px;
 }
+
+.create-dropdown{
+  width: 254px;
+  height: 26px;
+  
+}
+
 
 }
