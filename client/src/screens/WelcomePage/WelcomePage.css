@@ -1,0 +1,26 @@
+.welcome-image img{
+width: 450px;
+height: 300px;
+float: left;
+
+}
+
+.welcome-paragraph{
+display: block;
+text-align: center;
+color:#004643;
+margin-left: 50px;
+}
+
+.welcome-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.welcome-button{
+  size: 50px;
+  width:65px;
+  color:#004643;
+}
