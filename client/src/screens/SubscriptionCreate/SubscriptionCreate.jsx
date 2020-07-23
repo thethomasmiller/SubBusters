@@ -111,16 +111,8 @@ class SubscriptionCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
-            <label for='input-logo-url' className='create-label'>Logo URL</label>
-            <input
-              className='input-logo-url'
-              placeholder='Enter URL'
-              value={subscription.logoURL}
-              name='logoURL'
-
-              autoFocus
-              onChange={this.handleChange}
-            />
+            
+            <div className='create-website'>
             <label for='input-website-url'className='create-label'>Website</label>
             <input
               className='website-url'
@@ -131,6 +123,7 @@ class SubscriptionCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
+            </div>
             <div>
               <button type='submit' className="submit-button">Add</button>
             </div>
