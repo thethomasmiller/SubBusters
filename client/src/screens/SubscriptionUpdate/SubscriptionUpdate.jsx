@@ -23,10 +23,33 @@ class SubscriptionUpdate extends Component {
         logoURL: '',
         websiteURL: ''
       },
-      updated: false
-    }
+      updated: false,
+
+      categories: [
+        'Music','Movies and TV', 'Software', 'Gaming', 'News', 'Other'
+      ],
+
+      billingCycle: [
+        'Monthly', 'Quarterly', 'Yearly'
+      ],
+
+      renewOptions: [
+        'Yes', 'No'
+      ]
+    } 
   }
 
+  filterCategories = (passedCategory) => {
+    return this.state.categories.filter(category => { return category !== passedCategory })
+  }
+
+  filterBilling = (passedCycle) => {
+    return this.state.billingCycle.filter(billing => { return billing !== passedCycle })
+  }
+
+  filterRenew = (passedOptions) => {
+    return this.state.renewOptions.filter(renew => { return renew !== passedOptions })
+  }
 
   async componentDidMount() {
     let { id } = this.props.match.params
@@ -99,31 +122,37 @@ class SubscriptionUpdate extends Component {
             <div className="flex-row">
               <p>Category</p>
               <select className='input-category'>
+
                 <option value={subscription.category}>{`${subscription.category}`}</option>
-                <option value='music'>Music</option>
-                <option value='movies'>Movies &amp; TV</option>
-                <option value='software'>Software</option>
-                <option value='gaming'>Gaming</option>
-                <option value='news'>News</option>
-                <option value='other'>Other</option>
+
+                {this.filterCategories(subscription.category).map(category => (
+                    <option>{category}</option>
+                ))}
 
               </select>
             </div>
             <div className="flex-row">
               <p>Billing Cycle</p>
               <select className='billing-cycle'>
+
                 <option value={subscription.billingCycle}>{`${subscription.billingCycle}`}</option>
-                <option value='monthly'>Monthly</option>
-                <option value='quarterly'>Quarterly</option>
-                <option value='yearly'>Yearly</option>
+
+                {this.filterBilling(subscription.billingCycle).map(billingCycle => (
+                    <option>{billingCycle}</option>
+                ))}
+                
               </select>
             </div>
             <div className="flex-row">
               <p>Auto-Renew</p>
               <select className='auto-renew'>
+
                 <option value={subscription.autoRenew}>{`${subscription.autoRenew}`}</option>
-                <option value='yes'>YES</option>
-                <option value='no'>NO</option>
+
+                {this.filterRenew(subscription.autoRenew).map (renewOptions => (
+                    <option>{renewOptions}</option>
+                ))}
+
               </select>
             </div>
             <div className="flex-row">
