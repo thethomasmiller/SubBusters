@@ -6,6 +6,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
  
+.add-subscription-title{
+  margin-top: 100px;
+  color: black;
+  font-weight: bold;
+
+}
+
+
 .create-form {
   padding-top: 50px;
   display: flex;
@@ -13,11 +21,22 @@
   align-items: center;
   height: 250px;
   width: 625px;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
   flex: 1 0 auto;
 }
 
+.create-label{
+  width: 100px;
+}
+
+.create-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 625px;
+}
 
 input, textarea {
   display: flex ;
@@ -27,14 +46,14 @@ input, textarea {
   width: 200px ;
   background: #F2F2F2;
   border: transparent;
-  color: #C4C4C4;
+  color: #707070;
+  text-indent: 10px;
+  height: 26px;
 
 }
-
-textarea {
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
+.create-website{
+  display: flex;
+  align-items: center;
 }
 
 .input-amount {
@@ -43,7 +62,7 @@ textarea {
 }
 
 
-.input-billing-date {
+.input-name {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
@@ -52,15 +71,23 @@ textarea {
   width: 200px ;
 }
 
-.input-billing-cycle {
+
+.create-dropdown {
+  appearance: none;
+  background-image: url(https://res.cloudinary.com/alienora/image/upload/v1595523020/icon_1_uzvvbm.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-color:#F2F2F2;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  text-indent: 15px ;
   border: transparent;
   border-radius: 100px;
-  background: #F2F2F2;
-  color: #C4C4C4;
+  color: #707070;
   width: 200px ;
   padding: 0;
+  height: 26px;
 }
 
 .input-auto-renew {
@@ -68,7 +95,7 @@ textarea {
   font-family: Arial, Helvetica, sans-serif;
   border: transparent;
   border-radius: 100px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #C4C4C4;
   width: 200px ;
 }
@@ -77,24 +104,26 @@ textarea {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #C4C4C4;
   width: 200px ;
+  height: 26px;
 }
 
 .input-billing-date {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #C4C4C4;
+  height: 26px;
 }
 
 .input-logo-url {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #C4C4C4;
 }
 
@@ -102,19 +131,87 @@ textarea {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #C4C4C4;
 }
 
-.submit-button {
+.submit-button,
+.submit-button a:link,
+.submit-button a:visited {
   display: flex;
   font-size: 17px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   color:#004643;
-  margin-top: 40px;
+  margin-top:4px;
   background-color:  #F2F2F2;
   border: 1px solid #ABD1C6;
   border-radius: 5px;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+.create-form {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 250px;
+  height: auto;
+  padding-top: 10px;
+  margin-bottom: 25px;
+  align-items: start;
+  margin-top: 10px;
+ 
+}
+.create-buttons{
+  display:flex;
+  flex-direction: row;
+  width: 250px;
+  margin-bottom:50px;
+}
+.create-website{
+  flex-direction: column;
+  align-items: start;
+}
+
+.submit-button{
+  
+}
+
+.add-subscription-title{
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+input {
+  width: 250px;
+  margin-bottom: 10px;
+}
+.input-name{
+  width: 250px;
+  margin-bottom: 10px;
+}
+.input-auto-renew {
+  width: 254px;
+}
+.input-amount{
+  width: 254px;
+}
+.input-billing-cycle{
+  width: 254px;
+}
+
+.create-dropdown{
+  width: 254px;
+  height: 26px;
+  
+}
+
+
 }

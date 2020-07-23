@@ -1,11 +1,4 @@
-/* body {
-    font-family: SF Pro Text;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 20px;
-    color: #004643
-} */
+
 
 .subscription-edit {
     display: flex;
@@ -18,25 +11,37 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo-container {
     width: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     border-bottom: 1px solid black;
     margin-bottom: 20px;
     margin-top: 30px;
+    align-items: center;
 }
 
 .logo-container input {
-    width: 50px;
+    width: 100px;
     margin: 20px 0;
 }
 
-.logo-name,
-.logo-url {
+.edit-logo {
+    width: 40px;
+    height: 100%;
+}
+
+.logo-name {
     border: none;
+    background-color: transparent;
+    color: #004643;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .edit-form {
@@ -52,29 +57,42 @@
 .auto-renew,
 .input-category,
 .billing-cycle {
-    width: 150px;
+    width: 200px;
     height: 26px;
-    margin: 10px; 
+    margin: 10px 0 10px 25px; 
     padding: 0;
-    border-radius: 8px;
+    border-radius: 100px;
     border: none;
-    background-color: #E5E5E5;
+    background-color: #F2F2F2;
     color: #707070;
+    font-size: 17px;
 }
 
 .auto-renew,
 .input-category,
 .billing-cycle {
     appearance: none;
+    padding-left: 14px;
+    background-image: url(https://res.cloudinary.com/alienora/image/upload/v1595522596/icon_y6feqw.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-position-y: center;
+}
+
+.input-name,
+.amount,
+.billing-date,
+.website-url {
+    text-indent: 14px;
 }
 
 .change-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .unsubscribe-button {
-    margin: 20px 15px;
+    margin: 20px 15px 80px 15px;
     width: 120px;
     background: #F2F2F2;
     border: 1px solid rgba(225, 97, 98, 0.25);
@@ -88,7 +106,7 @@
 }
 
 .update-button {
-    margin: 20px 15px;
+    margin: 20px 15px 80px 15px;
     width: 80px;
     background: #F2F2F2;
     border: 1px solid #ABD1C6;

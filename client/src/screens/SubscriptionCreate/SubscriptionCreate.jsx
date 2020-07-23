@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import './SubscriptionCreate.css'
 import Layout from '../../components/shared/Layout/Layout'
-import { Redirect } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import { createSubscription } from '../../services/subscriptions'
+import profilePic from '../../assets/images/profilePic.png'
 
 
 
@@ -28,7 +29,8 @@ class SubscriptionCreate extends Component {
     this.setState({
       subscription: {
         ...this.state.subscription,
-        [name]: value
+        [name]: value,
+        logoURL:"https://res.cloudinary.com/alienora/image/upload/v1595446140/Subscription_logo_placeholder_on9w2v.png"
       }
     })
   }
@@ -47,10 +49,16 @@ class SubscriptionCreate extends Component {
     }
     return (
       <Layout>
-        <div className='body'>
-          <h2>Add Subscription Manually</h2>
+
+        <div className="user-header">
+          <img src={`${profilePic}`} className='profile-image' />
+          <h3 className="user-greeting">Hello, Jamie</h3>
+        </div>
+
+        <div className='body-create'>
+          <h2 className='add-subscription-title'>Add Subscription Manually</h2>
           <form className='create-form' onSubmit={this.handleSubmit}>
-            <label for='input-name'>Subscription</label>
+            <label for='input-name' className='create-label'>Subscription</label>
             <input
               className='input-name'
               placeholder='Enter Name'
@@ -59,8 +67,8 @@ class SubscriptionCreate extends Component {
               onChange={this.handleChange}
             />
 
-            <label for='input-category'>Category</label>
-            <select name='category' className='input-billing-cycle' onChange={this.handleChange}  >
+            <label for='input-category' className='create-label'>Category</label>
+            <select name='category' className='create-dropdown' onChange={this.handleChange}  >
               <option value=''>Select</option>
               <option value='Music'>Music</option>
               <option value='Movies and TV'>Movies & TV</option>
@@ -69,8 +77,8 @@ class SubscriptionCreate extends Component {
               <option value='News'>News</option>
             </select>
 
-            <label for='input-billing-cycle'>Billing Cycle</label>
-            <select name='billingCycle' className='input-billing-cycle' onChange={this.handleChange}  >
+            <label for='input-billing-cycle' className='create-label'>Billing Cycle</label>
+            <select name='billingCycle' className='create-dropdown' onChange={this.handleChange}  >
               <option value=''>Select</option>
               <option value='monthly'>Monthly</option>
               <option value='quarterly'>Quarterly</option>
@@ -78,14 +86,14 @@ class SubscriptionCreate extends Component {
             </select>
 
 
-            <label for='input-auto-renew'>Auto-Renew</label>
-            <select name='autoRenew' className='input-auto-renew' onChange={this.handleChange}  >
+            <label for='input-auto-renew' className='create-label'>Auto-Renew</label>
+            <select name='autoRenew' className='create-dropdown' onChange={this.handleChange}  >
               <option value=''>Select</option>
               <option value='true'>Yes</option>
               <option value='false'>No</option>
             </select>
 
-            <label for='input-amount'>Amount</label>
+            <label for='input-amount' className='create-label'>Amount</label>
             <input
               className='input-amount'
               placeholder='Amount'
@@ -94,7 +102,7 @@ class SubscriptionCreate extends Component {
 
               onChange={this.handleChange}
             />
-            <label for='input-name'>Billing Date</label>
+            <label for='input-name' className='create-label'>Billing Date</label>
             <input
               className='input-billing-date'
               placeholder='MM/DD/YY'
@@ -104,27 +112,21 @@ class SubscriptionCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
-            <label for='input-logo-url'>Logo URL</label>
-            <input
-              className='input-logo-url'
-              placeholder='Enter URL'
-              value={subscription.logoURL}
-              name='logoURL'
-
-              autoFocus
-              onChange={this.handleChange}
-            />
-            <label for='input-website-url'>Website URL</label>
+            
+            <div className='create-website'>
+            <label for='input-website-url'className='create-label'>Website</label>
             <input
               className='website-url'
-              placeholder='Enter URL'
+              placeholder='Enter address'
               value={subscription.websiteURL}
               name='websiteURL'
 
               autoFocus
               onChange={this.handleChange}
             />
-            <div>
+            </div>
+            <div className='create-buttons'>
+              <Link to='/subscriptions' style={{ textDecoration: 'none' }}><button className="submit-button">Back</button></Link>   
               <button type='submit' className="submit-button">Add</button>
             </div>
           </form>

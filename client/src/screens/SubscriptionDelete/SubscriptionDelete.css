@@ -2,13 +2,14 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  padding:px ;
-
-
+  width: 200px;
+  border-bottom: 1px solid black;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .delete-button{
-  width: 150px;
+  width: 200px;
   background: #F2F2F2;
   border: 1px solid #ABD1C6;
   box-sizing: border-box;
@@ -58,3 +59,4 @@
   justify-content: center;
   text-align:center;
 }
+
