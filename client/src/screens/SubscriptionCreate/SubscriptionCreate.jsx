@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './SubscriptionCreate.css'
 import Layout from '../../components/shared/Layout/Layout'
-import { Redirect } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import { createSubscription } from '../../services/subscriptions'
 import profilePic from '../../assets/images/profilePic.png'
 
@@ -125,7 +125,8 @@ class SubscriptionCreate extends Component {
               onChange={this.handleChange}
             />
             </div>
-            <div>
+            <div className='create-buttons'>
+              <Link to='/subscriptions' style={{ textDecoration: 'none' }}><button className="submit-button">Back</button></Link>   
               <button type='submit' className="submit-button">Add</button>
             </div>
           </form>
