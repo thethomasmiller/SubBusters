@@ -40,13 +40,16 @@ class SubscriptionDelete extends Component {
 
         <div className="user-header">
           <img src={`${profilePic}`} className='profile-image' />
-          <h3 className="user-greeting">Whoa, Jamie</h3>
+          <h3 className="user-greeting">Hello, Jamie</h3>
         </div>
 
+        <div className='bottom-line'>
         <div className="container">
           <img className="logo" src={subscription.logoURL} alt={subscription.name} />
           <h2>{subscription.name}</h2>
         </div>
+        </div>
+
         <div>
           <p className="paragraph-text">Unfortunately, we can't actually delete an account for you but if you click the link below, we'll re-direct you back to your suscriber's site.</p>
           <button className="delete-link" ><Link style={{ textDecoration: 'none', color: 'red' }} className="external" to={`/subscription/${subscription.websiteURL}`} >Click Here!</Link></button>
