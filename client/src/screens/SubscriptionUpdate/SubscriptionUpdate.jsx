@@ -64,7 +64,7 @@ class SubscriptionUpdate extends Component {
 
         <div className="user-header">
           <img src={`${profilePic}`} className='profile-image' />
-          <h3 className="user-greeting">Whoa, Jamie</h3>
+          <h3 className="user-greeting">Hello, Jamie</h3>
         </div>
 
         <div className='subscription-edit'>
@@ -118,7 +118,7 @@ class SubscriptionUpdate extends Component {
               </select>
             </div>
             <div className="flex-row">
-              <p>Auto Renew</p>
+              <p>Auto-Renew</p>
               <select className='auto-renew'>
                 <option value={subscription.autoRenew}>{`${subscription.autoRenew}`}</option>
                 <option value='yes'>YES</option>
