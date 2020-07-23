@@ -3,6 +3,7 @@ import './SubscriptionCreate.css'
 import Layout from '../../components/shared/Layout/Layout'
 import { Redirect } from 'react-router-dom'
 import { createSubscription } from '../../services/subscriptions'
+import profilePic from '../../assets/images/profilePic.png'
 
 
 
@@ -47,6 +48,12 @@ class SubscriptionCreate extends Component {
     }
     return (
       <Layout>
+
+        <div className="user-header">
+          <img src={`${profilePic}`} className='profile-image' />
+          <h3 className="user-greeting">Whoa, Jamie</h3>
+        </div>
+
         <div className='body'>
           <h2>Add Subscription Manually</h2>
           <form className='create-form' onSubmit={this.handleSubmit}>

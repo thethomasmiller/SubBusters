@@ -2,13 +2,11 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  padding:px ;
-
 
 }
 
 .delete-button{
-  width: 150px;
+  width: 200px;
   background: #F2F2F2;
   border: 1px solid #ABD1C6;
   box-sizing: border-box;
