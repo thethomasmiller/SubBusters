@@ -29,7 +29,8 @@ class SubscriptionCreate extends Component {
     this.setState({
       subscription: {
         ...this.state.subscription,
-        [name]: value
+        [name]: value,
+        logoURL:"https://res.cloudinary.com/alienora/image/upload/v1595446140/Subscription_logo_placeholder_on9w2v.png"
       }
     })
   }
