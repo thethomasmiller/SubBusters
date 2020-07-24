@@ -2,7 +2,7 @@
 
 # SubBusters
 
-[SUBBUSTERS](deployed url)
+[SUBBUSTERS](http://subbusters.surge.sh/)
 [SUBBUSTERS API](https://subbusters.herokuapp.com/api/subscriptions/)
 
 ## Project Overview
@@ -20,8 +20,7 @@ SubBusters is a subscription tracking website that allows users to create a visu
 [Trello](https://trello.com/b/R5XTRx2G)
 
 #### PostMVP  
-- User Feature
-- Continue Building out Features until fully realized. 
+- Welcome Page
 
 ## Schema
 
