@@ -1,23 +1,28 @@
 .container{
   display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 200px;
   border-bottom: 1px solid black;
   align-items: center;
-  margin: 0 auto;
+  margin: 30px auto;
+
 }
 
 .delete-button{
-  width: 200px;
+  width: 250px;
   background: #F2F2F2;
   border: 1px solid #ABD1C6;
   box-sizing: border-box;
   border-radius: 5px;
-  color: #db0d0d;
   display:flex;
   justify-content: center;
   text-align:center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 50px;
   
 }
 .delete-link{
@@ -25,7 +30,7 @@
   justify-content: center;
   border: none;
   background-color: transparent;
-
+  font-size: 17px;
 }
 
 .paragraph-text{
@@ -33,9 +38,13 @@
   text-align: center;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 130px;
+  margin-top: 50px;
   width: 300px;
   color: #004643;
+  font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 20px;
 }
 
 .dashboard-button,
@@ -46,17 +55,22 @@
   justify-content: center;
   margin: 0 auto;
   margin-top: 40px;
+  
 } 
 
 .dashboard-button{
-  width: 150px;
+  width: 250px;
   background: #F2F2F2;
   border: 1px solid #ABD1C6;
   box-sizing: border-box;
   border-radius: 5px;
-  color: #004643;
   display:flex;
   justify-content: center;
   text-align:center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 50px;
 }
 
