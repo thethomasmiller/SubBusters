@@ -14,7 +14,6 @@ font-style: normal;
 font-weight: normal;
 font-size: 17px;
 line-height: 20px;
-text-align: center;
 }
 
 .welcome-container{
@@ -38,11 +37,11 @@ text-align: center;
 
 @media only screen and (max-width:420px){
   .welcome-image img{
-    width: 100%;
+    width: 90%;
     height: 200px;
     float: none;
     display: block;
-    justify-content: center;
+    margin:20px auto ;
   }
   .welcome-paragraph{
     display: block;
