@@ -1,11 +1,17 @@
 .subscription-info {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    
 }
 
 .subscription-info img {
-    width: 15px;
+    width: 20px;
     height: 100%;
+    padding-left: 10px;
+}
+
+.logo-icon{
+  padding-right: 10px;
 }
 
