@@ -1,5 +1,4 @@
 
-
 .subscription-edit {
     display: flex;
     flex-direction: column;
@@ -117,8 +116,4 @@
     font-weight: 600;
     font-size: 17px;
     line-height: 20px;
-}
-
-@media only screen and (max-width: 420px) {
-    
 }

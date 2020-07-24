@@ -11,10 +11,18 @@
   margin-top: 0;
 }
 
+.desktop-extra-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  margin-top: 40px;
+}
+
 .input-login {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 30px;
   align-items: center;
   justify-content: flex-start;
 }
@@ -70,4 +78,13 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+  .desktop-extra-logo {
+    display: none;
+  }
+
+  .input-login {
+    margin-top: 70px;
+  }
+}
 

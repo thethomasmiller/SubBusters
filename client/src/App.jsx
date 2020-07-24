@@ -17,7 +17,7 @@ const App = () => {
         <Route exact path='/subscriptions' component={Subscriptions}/>
         <Route path='/add-subscription' component={SubscriptionCreate}/>
         <Route exact path='/subscriptions/:id/update' component={SubscriptionUpdate}/>
-        <Route exact path='/subscriptions/:id' component={SubscriptionDelete}/>
+        <Route exact path='/subscriptions/:id' component={SubscriptionDelete} />
       </Switch>
     </div>
   </>)
