@@ -44,7 +44,7 @@ const main = async () => {
         "amount": "39.99",
         "billingDate": "Jan 5",
         "logoURL": "https://res.cloudinary.com/alienora/image/upload/v1595446319/formastack_1_seaebe.png",
-        "websiteURL": "https://www.formstack.com/index"
+        "websiteURL": "https://formstack.com/index"
       },
       {
         "name": "Adobe",
