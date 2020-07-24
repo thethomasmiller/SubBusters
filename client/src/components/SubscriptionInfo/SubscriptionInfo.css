@@ -15,3 +15,13 @@
   padding-right: 10px;
 }
 
+.props-name,
+.props-billing-date,
+.props-amount {
+ 
+  width: 100px;
+}
+
+.props-name{
+  padding-left: 15px;
+}
