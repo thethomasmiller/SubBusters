@@ -1,7 +1,5 @@
 const db = require('../db/connection')
 const Subscription = require('../models/subscription')
-//const Hulu = require('../../assets/logos/Hulu.png')
-
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
