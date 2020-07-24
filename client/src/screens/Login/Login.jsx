@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../../components/shared/Layout/Layout'
 import './Login.css'
 import {Link} from 'react-router-dom'
+import ghostLogo from '../../assets/images/ghostLogo.png'
 
 export default function Login() {
   return (
@@ -12,6 +13,11 @@ export default function Login() {
           <h3 className='never-be-haunted'>Never Be Haunted By Ghost Subscriptions Again</h3>
       </div>
 
+      <div className='desktop-extra-logo'>
+        <img src={`${ghostLogo}`} className='header-ghost' /><Link style={{ textDecoration: 'none' }} to={`/subscriptions`}><h1 className= 'header-subbusters'>SubBusters</h1></Link>
+      </div>
+      
+<div className='input-login'></div>
       <div className='input-login'>
 
         <div className="input-email-border">
