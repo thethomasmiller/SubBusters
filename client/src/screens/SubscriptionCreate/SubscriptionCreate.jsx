@@ -39,12 +39,15 @@ class SubscriptionCreate extends Component {
     event.preventDefault()
     const created = await createSubscription(this.state.subscription)
     this.setState({ created })
+
+  
+
   }
 
   render() {
     const { subscription, created } = this.state
     if (created) {
-      return <Redirect to={'/subscriptions'} />
+      return <Redirect to={'/subscriptions'}/>
 
     }
     return (
