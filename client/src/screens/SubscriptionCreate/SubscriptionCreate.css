@@ -3,51 +3,42 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
 }
  
 .add-subscription-title{
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   color: black;
   font-weight: bold;
-
 }
 
-
 .create-form {
-  padding-top: 50px;
   display: flex;
   flex-direction:column;
   align-items: center;
-  height: 250px;
   width: 625px;
   justify-content: space-between;
   margin: auto;
-  flex: 1 0 auto;
 }
 
 .create-label{
-  width: 100px;
+  display: flex;
+  align-items: center;
+  width: 110px;
+  padding: 5px;
 }
 
-.create-buttons{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 275px;
-}
 
 .input-container{
   display:flex;
   align-items: center;
-
+  margin-bottom: 23px;
 }
 
 input, textarea {
   display: flex ;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
   border-radius: 100px;
   width: 200px ;
   background: #F2F2F2;
@@ -55,27 +46,16 @@ input, textarea {
   color: #707070;
   text-indent: 18px;
   height: 26px;
-
-}
-.create-website{
-  display: flex;
   align-items: center;
-}
 
-.input-amount {
-  font-size: 13px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
+}
 
 .input-name {
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
   background: #F2F2F2;
   color: #C4C4C4;
   width: 200px ;
-  margin-bottom:15px;
   height: 24px;
 }
 
@@ -84,11 +64,10 @@ input, textarea {
   appearance: none;
   background-image: url(https://res.cloudinary.com/alienora/image/upload/v1595523020/icon_1_uzvvbm.png);
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position: right 10px center;
   background-position-y: center;
   background-color:#F2F2F2;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
   text-indent: 18px ;
   border: transparent;
   border-radius: 100px;
@@ -96,57 +75,55 @@ input, textarea {
   width: 200px ;
   padding: 0;
   height: 26px;
-  margin-bottom: 15px;
+  align-items: center;
 }
 
+
+
 .input-auto-renew {
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
   border: transparent;
   border-radius: 100px;
   background-color: #F2F2F2;
   color: #C4C4C4;
   width: 200px ;
+  align-items: center;
 }
 
 .input-amount {
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
   background-color: #F2F2F2;
   color: #C4C4C4;
   width: 200px ;
   height: 24px;
-  margin-bottom: 15px;
+  align-items: center;
+
 }
 
 .input-billing-date {
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
   background-color: #F2F2F2;
   color: #C4C4C4;
   height: 24px;
-  margin-bottom: 15px;
-}
-
-.input-logo-url {
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 100px;
-  background-color: #F2F2F2;
-  color: #C4C4C4;
 }
 
 .input-website-url {
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
   border-radius: 100px;
   background-color: #F2F2F2;
   color: #C4C4C4;
   text-indent: 18px;
   height: 24px;
 }
+
+
+.create-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 275px;
+  margin: 10px 0;
+}
+
 
 .submit-button,
 .submit-button a:link,
@@ -177,11 +154,9 @@ input, textarea {
   width: 250px;
   height: auto;
   padding-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   align-items: center;
-  margin-top: 10px;
   
- 
 }
 
 
@@ -191,15 +166,13 @@ input, textarea {
   width: 275px;
   margin-bottom:50px;
 }
-.create-website{
-  flex-direction: column;
-  align-items: start;
-}
 
 
 .add-subscription-title{
   font-size: 18px;
   margin-top: 10px;
+  padding-top: 25px;
+
 }
 
 input {
