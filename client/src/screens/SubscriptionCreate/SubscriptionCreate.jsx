@@ -123,7 +123,7 @@ class SubscriptionCreate extends Component {
             <div className='input-container'>
             <label for='input-website-url'className='create-label'>Website</label>
             <input
-              className='website-url'
+              className='input-website-url'
               placeholder='Enter address'
               value={subscription.websiteURL}
               name='websiteURL'
