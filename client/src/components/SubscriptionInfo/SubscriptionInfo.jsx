@@ -10,9 +10,9 @@ const SubscriptionInfo = (props) => {
 
     <div className="subscription-info">   
         <img src={props.logoURL}></img>
-        <p>{props.name}</p>
-        <p>{props.billingDate}</p>
-        <p>${props.amount}</p>
+        <p className='props-name'>{props.name}</p>
+        <p className='props-billing-date'>{props.billingDate}</p>
+        <p className='props-amount'>${props.amount}</p>
         <Link to = {`/subscriptions/${props._id}/update`}><img className="logo-icon" src={iconPlus}></img></Link>
     </div>
    
