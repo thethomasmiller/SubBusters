@@ -40,7 +40,7 @@ class SubscriptionDelete extends Component {
       <Layout>
 
         <div className="user-header">
-          <img src={`${profilePic}`} className='profile-image' />
+          <img src={`${profilePic}`} className='profile-image' alt='profile' />
           <h3 className="user-greeting">Hello, Jamie</h3>
         </div>
 
@@ -53,7 +53,7 @@ class SubscriptionDelete extends Component {
 
         <div>
           <p className="paragraph-text">Unfortunately, we can't actually delete an account for you but if you click the link below, we'll re-direct you back to your suscriber's site.</p>
-          <button className="delete-link" ><a target="_blank" style={{ textDecoration: 'none', color: 'red' }} className="external" href={subscription.websiteURL} >Click Here!</a></button>
+          <button className="delete-link" ><a target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'red' }} className="external" href={subscription.websiteURL} >Click Here!</a></button>
 
           <button className="delete-button" onClick={() => deleteSubscription(subscription._id)}><Link style={{ textDecoration: 'none', color: '#e16162' }} to={`/subscriptions`}>Delete from Dashboard</Link></button>
 

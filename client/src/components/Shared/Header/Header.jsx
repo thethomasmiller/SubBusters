@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <div className='header'>
-        <img src={`${ghostLogo}`} className='header-ghost' /><Link style={{ textDecoration: 'none' }} to={`/subscriptions`}><h1 className= 'header-subbusters'>SubBusters</h1></Link>
+        <img src={`${ghostLogo}`} className='header-ghost' alt='ghost' /><Link style={{ textDecoration: 'none' }} to={`/subscriptions`}><h1 className= 'header-subbusters'>SubBusters</h1></Link>
       </div>
     </header>
   )

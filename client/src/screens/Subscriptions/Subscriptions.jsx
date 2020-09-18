@@ -53,7 +53,7 @@ class Subscriptions extends Component {
 
 
         <div className="user-header">
-          <img src={`${profilePic}`} className='profile-image' />
+          <img src={`${profilePic}`} className='profile-image' alt='profile'/>
           <h3 className="user-greeting">Whoa, Jamie</h3>
         </div>
 
