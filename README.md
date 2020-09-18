@@ -24,6 +24,7 @@ SubBusters is a subscription tracking website that allows users to create a visu
 
 #### PostMVP  
 - Welcome Page
+- Auth Login
 
 ## Schema
 
