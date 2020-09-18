@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Layout from '../../components/shared/Layout/Layout.jsx'
+import Layout from '../../components/shared/Layout/Layout'
 import { Link } from 'react-router-dom'
 import './WelcomePage.css'
 
@@ -26,9 +26,6 @@ class WelcomePage extends Component {
           </div>
           </div>
           </div>
-
-
-
       </Layout>
     )
   }
