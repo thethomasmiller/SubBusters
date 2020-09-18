@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import Layout from '../../components/shared/Layout/Layout'
-// import profilePic from '../../assets/images/profilePic.png'
+import Layout from '../../components/shared/Layout/Layout.jsx'
 import { Link } from 'react-router-dom'
 import './WelcomePage.css'
 
@@ -9,7 +8,6 @@ class WelcomePage extends Component {
     return (
       <Layout>
         <div className="user-header">
-          <img src="" className='profile-image' alt='profile'/>
           <h3 className="user-greeting">Hello, Stranger</h3>
         </div> 
 
