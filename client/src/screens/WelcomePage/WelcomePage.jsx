@@ -9,13 +9,13 @@ class WelcomePage extends Component {
     return (
       <Layout>
         <div className="user-header">
-          <img src="" className='profile-image' />
+          <img src="" className='profile-image' alt='profile'/>
           <h3 className="user-greeting">Hello, Stranger</h3>
         </div> 
 
         <div className="welcome-container">
         <div className="welcome-image">
-          <img src='https://res.cloudinary.com/dc6ncx5wp/image/upload/v1595529395/Ghost-STEAL_image_1_zy7s1z.png' />
+          <img src='https://res.cloudinary.com/dc6ncx5wp/image/upload/v1595529395/Ghost-STEAL_image_1_zy7s1z.png' alt ='ghost steal'/>
         </div>
         <div>
           <div className="welcome-paragraph">

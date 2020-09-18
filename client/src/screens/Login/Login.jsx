@@ -14,7 +14,7 @@ export default function Login() {
       </div>
 
       <div className='desktop-extra-logo'>
-        <img src={`${ghostLogo}`} className='header-ghost' /><Link style={{ textDecoration: 'none' }} to={`/subscriptions`}><h1 className= 'header-subbusters'>SubBusters</h1></Link>
+        <img src={`${ghostLogo}`} className='header-ghost' alt='ghost'/><Link style={{ textDecoration: 'none' }} to={`/subscriptions`}><h1 className= 'header-subbusters'>SubBusters</h1></Link>
       </div>
       
 <div className='input-login'></div>
@@ -37,7 +37,7 @@ export default function Login() {
           <button className='login-button'><Link style={{ textDecoration: 'none', color: '#004643'}} to={`/subscriptions`}>Login</Link></button>
         
         <div className="new-member">
-            <a className="new-member">New Member? Sign Up</a>
+            <p className="new-member">New Member? Sign Up</p>
         </div>
   
       </div>
